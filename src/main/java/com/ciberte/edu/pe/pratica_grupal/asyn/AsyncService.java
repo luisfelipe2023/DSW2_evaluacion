@@ -27,7 +27,7 @@ public class AsyncService {
                 String valarchivo1 = archivo1.join();
                 String valarchivo2 = archivo2.join();
                 String valarchivo3 = archivo3.join();
-                return "ARCHIVOS CREADOS "+'\n'+
+                return "ARCHIVOS CREADOS CORRECTAMENTE "+'\n'+
                         valarchivo1+"-"+'\n'+
                         valarchivo2+"-"+'\n'+
                         valarchivo3+"-";
@@ -35,7 +35,7 @@ public class AsyncService {
             }catch (Exception ex){
                 return "Error al combinar datos"+ex.getMessage();
             }
-        }).exceptionally(ex -> "Error al ejecutar tareas" + ex.getMessage());
+        }).exceptionally(ex -> "Error al ejecutar las tareas" + ex.getMessage());
     }
 }
 

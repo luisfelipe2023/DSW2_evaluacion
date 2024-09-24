@@ -28,7 +28,7 @@ public class PraticaGrupalApplication implements CommandLineRunner {
 
 		resultado.thenAccept(res -> log.info(res))
 				.exceptionally(ex -> {
-					log.error("Error al crear archivos: " + ex.getMessage());
+					log.error("No se pudo crear los archivos: " + ex.getMessage());
 					return null;
 				});
 	}

@@ -21,7 +21,7 @@ public class FileService {
             TimeUnit.SECONDS.sleep(10);
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
-            throw new RuntimeException("La Operación Fue Interrumpida", e);
+            throw new RuntimeException("La operación no pudo ser completada", e);
         }
 
         String nombreArchivo = FILE_PATH + "10.txt";
